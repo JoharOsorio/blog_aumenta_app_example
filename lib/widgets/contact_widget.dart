@@ -1,3 +1,4 @@
+import 'package:blog_aumenta_app_example/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class Contact extends StatelessWidget {
