@@ -1,4 +1,3 @@
-import 'package:blog_aumenta_app_example/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class Contact extends StatelessWidget {
@@ -11,13 +10,13 @@ class Contact extends StatelessWidget {
     return Container(
       color: Colors.black,
       width: double.infinity,
-      child: const Padding(
-        padding: EdgeInsets.only(left: 30.0, right: 16.0, top: 16.0, bottom: 32),
+      child: Padding(
+        padding: const EdgeInsets.only(left: 30.0, right: 16.0, top: 16.0, bottom: 32),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'contacto',
               style: TextStyle(
                 fontSize: 24.0,
@@ -25,8 +24,8 @@ class Contact extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 16.0),
-            Text(
+            const SizedBox(height: 16.0),
+            const Text(
               '+56 9 1234 5678',
               style: TextStyle(
                 fontSize: 16.0,
@@ -34,13 +33,25 @@ class Contact extends StatelessWidget {
               ),
               textAlign: TextAlign.start,
             ),
-            Text(
+            const Text(
               'contacto@example.cl',
               style: TextStyle(
                 fontSize: 16.0,
                 color: Colors.white,
               ),
               textAlign: TextAlign.start,
+            ),
+            const SizedBox(height: 16.0),
+            //agrega botton para ir a formulario de contacto
+            ElevatedButton(
+              onPressed: () {
+                //navegará a otra pantalla
+                Navigator.pushNamed(
+                  context,
+                  'contact-form',
+                );
+              },
+              child: const Text('Contactar'),
             ),
           ],
         ),

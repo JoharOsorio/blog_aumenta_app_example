@@ -7,6 +7,7 @@ class AppRoutes{
   static Map<String, Widget Function (BuildContext)> routes = {
     'home-blog': (BuildContext context) => const HomeScreen(),
     'post-detail': (BuildContext context) => const PostDetailScreen(),
+    'contact-form': (BuildContext context) => const ContactFormScreen(),
   };
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings){

@@ -36,8 +36,7 @@ class HomeScreen extends StatelessWidget {
           Column(
             children: [
               AboutUs(),
-              Contact(),
-              ContactForm()
+              Contact()
             ],
           )
         ],

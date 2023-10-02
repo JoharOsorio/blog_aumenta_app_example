@@ -72,7 +72,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                     context: context,
                     builder: (context) {
                       return AlertDialog(
-                        contentPadding: EdgeInsets.all(50),
+                        contentPadding:const  EdgeInsets.all(50),
                         content: const Contact(),
                         backgroundColor: Colors.black,
                         actions: <Widget>[
