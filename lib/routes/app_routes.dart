@@ -2,10 +2,10 @@ import 'package:blog_aumenta_app_example/screens/screens.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes{
-  static const initialRoute= 'home';
+  static const initialRoute= 'home-blog';
 
   static Map<String, Widget Function (BuildContext)> routes = {
-    'home': (BuildContext context) => const HomeScreen(),
+    'home-blog': (BuildContext context) => const HomeScreen(),
     'post-detail': (BuildContext context) => const PostDetailScreen(),
   };
 
