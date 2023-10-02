@@ -6,6 +6,7 @@ class AppRoutes{
 
   static Map<String, Widget Function (BuildContext)> routes = {
     'home': (BuildContext context) => const HomeScreen(),
+    'post-detail': (BuildContext context) => const PostDetailScreen(),
   };
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings){

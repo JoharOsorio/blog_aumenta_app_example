@@ -11,6 +11,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: Colors.white,
       centerTitle: true,
+      automaticallyImplyLeading: false,
       title: Image.network('https://aumenta360.cl/wp-content/uploads/2021/02/New-Project-4.png',
         fit: BoxFit.cover,
         width: 296,
@@ -22,7 +23,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
           icon: const Icon(Icons.menu),
           color: const Color.fromRGBO(102, 102, 102, 0.85),
           onPressed: () {
-            debugPrint('Menu');
+            
           },
         )
       ],

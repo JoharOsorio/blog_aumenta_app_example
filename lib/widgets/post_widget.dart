@@ -21,8 +21,16 @@ class PostItem extends StatelessWidget {
         elevation: 4, // Sombra
         child: InkWell(
           onTap: () {
-            debugPrint('Accionado');
             //navegará a otra pantalla
+            Navigator.pushNamed(
+              context,
+              'post-detail',
+              /*arguments: {
+                'imageURL': imageURL,
+                'category': category,
+                'title': title,
+              },*/
+            );
           },
           child: Column(
             children: [
